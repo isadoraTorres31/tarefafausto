@@ -1,0 +1,131 @@
+// Variáveis
+$primary-color: #000000; // Preto, para um visual clássico
+$secondary-color: #ffd700; // Dourado, inspirado na iconografia de Queen
+$accent-color: #ffffff;
+$highlight-color: #8b0000; // Vermelho escuro para detalhes
+$font-size-base: 16px;
+
+// Fontes
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $primary-color;
+    color: $accent-color;
+    margin: 0;
+    padding: 0;
+}
+
+// Navbar
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: $secondary-color;
+
+    h1 {
+        font-family: 'Playfair Display', serif;
+        color: $primary-color;
+        font-size: 2em;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+
+        li {
+            a {
+                color: $primary-color;
+                text-decoration: none;
+                font-size: 1.2em;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: $highlight-color;
+                }
+            }
+        }
+    }
+}
+
+// Cabeçalho Principal
+.header-content {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: $secondary-color;
+    color: $primary-color;
+
+    h2 {
+        font-size: 2.5em;
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    p {
+        font-size: 1.2em;
+        font-style: italic;
+        margin-top: 10px;
+    }
+}
+
+// Container principal
+.album {
+    padding: 20px;
+}
+
+// Grid para os itens do álbum
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+
+    .item {
+        background-color: $accent-color;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+            border: 2px solid $secondary-color;
+        }
+
+        h3 {
+            color: $primary-color;
+            font-size: 1.5em;
+            margin-top: 10px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        p {
+            color: $primary-color;
+            font-size: 1em;
+            margin: 10px 0;
+        }
+    }
+}
+
+// Responsividade
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .item {
+        padding: 15px;
+    }
+}

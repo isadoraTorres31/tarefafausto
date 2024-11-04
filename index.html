@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum Queen</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        h1 { 
+            color: black;
+        }
+        button {
+            background-color: black;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: 5px solid yellow;
+            cursor: pointer;
+            width: 100%;
+
+        }
+        button:hover { 
+            background-color: yellow;
+            color: black;
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>Queen</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#album">Álbum</a></li>
+                <li><a href="#biografia">Biografia</a></li>
+                <li><a href="#discografia">Discografia</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h2>Queen - Álbum de Lembranças</h2>
+            <p>Explore a jornada e o legado da lendária banda Queen</p>
+        </div>
+    </header>
+    <main id="album" class="album">
+        <section class="grid-container">
+            <div class="item">
+                <img src="assets/images/Freddie-Mercury.jpg" alt="Freddie Mercury">
+                <h3>Freddie Mercury</h3>
+                <p>O vocalista icônico, conhecido por sua presença de palco e voz incomparável.</p>
+                <button href="biografia.html">view biografia</button>
+            </div>
+            <div class="item">
+                <img src="assets/images/download.webp" alt="Brian May">
+                <h3>Brian May</h3>
+                <p>Guitarrista virtuoso, com solos épicos e cofundador da banda.</p>
+                <button>view biografia</button>
+            </div>
+            <div class="item">
+                <img src="assets/images/download (1).webp" alt="Roger Taylor">
+                <h3>Roger Taylor</h3>
+                <p>Baterista e compositor talentoso, trazendo energia à banda.</p>
+                <button>view biografia</button>
+            </div>
+            <div class="item">
+                <img src="assets/images/download (2).webp" alt="John Deacon">
+                <h3>John Deacon</h3>
+                <p>Baixista e compositor de clássicos como "Another One Bites the Dust".</p>
+                <button>view biografia</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
