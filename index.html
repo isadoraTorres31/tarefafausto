@@ -27,22 +27,29 @@
     </style>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <h1>Queen</h1>
-            <ul class="nav-links">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#album">Álbum</a></li>
-                <li><a href="#biografia">Biografia</a></li>
-                <li><a href="#discografia">Discografia</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-        <div class="header-content">
-            <h2>Queen - Álbum de Lembranças</h2>
-            <p>Explore a jornada e o legado da lendária banda Queen</p>
-        </div>
+
+    <!-- Menu lateral -->
+    <aside class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="closeMenu()">///</button>
+        <h1>Queen</h1>
+        <ul class="nav-links">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#album">Álbum</a></li>
+            <li><a href="#biografia">Biografia</a></li>
+            <li><a href="#discografia">Discografia</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </aside>
+
+    <!-- Botão para abrir o menu -->
+    <button class="menu-btn" onclick="openMenu()">☰</button>
+
+    <!-- Conteúdo Principal -->
+    <header class="header-content">
+        <h2>Queen - Álbum de Lembranças</h2>
+        <p>Explore a jornada e o legado da lendária banda Queen</p>
     </header>
+
     <main id="album" class="album">
         <section class="grid-container">
             <div class="item">

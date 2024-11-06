@@ -16,40 +16,18 @@ body {
     padding: 0;
 }
 
-// Navbar
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background-color: $secondary-color;
-
-    h1 {
-        font-family: 'Playfair Display', serif;
-        color: $primary-color;
-        font-size: 2em;
-        font-weight: 700;
-        margin: 0;
-    }
-
-    .nav-links {
-        list-style: none;
-        display: flex;
-        gap: 20px;
-
-        li {
-            a {
-                color: $primary-color;
-                text-decoration: none;
-                font-size: 1.2em;
-                transition: color 0.3s;
-
-                &:hover {
-                    color: $highlight-color;
-                }
-            }
-        }
-    }
+/* Botão de Menu */
+.menu-btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 1.5em;
+    background-color: #ffd700;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 // Cabeçalho Principal

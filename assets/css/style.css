@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap");
 body {
   font-family: "Roboto", sans-serif;
@@ -7,33 +8,18 @@ body {
   padding: 0;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
+/* Botão de Menu */
+.menu-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 1.5em;
   background-color: #ffd700;
-}
-.navbar h1 {
-  font-family: "Playfair Display", serif;
-  color: #000000;
-  font-size: 2em;
-  font-weight: 700;
-  margin: 0;
-}
-.navbar .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-.navbar .nav-links li a {
-  color: #000000;
-  text-decoration: none;
-  font-size: 1.2em;
-  transition: color 0.3s;
-}
-.navbar .nav-links li a:hover {
-  color: #8b0000;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .header-content {
